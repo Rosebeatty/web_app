@@ -8,6 +8,7 @@ body {
     background-color: rgba(95, 10, 224, 0.78);
     padding-bottom:100px;
 }
+
 textarea {
     margin-left:10px;
 }
@@ -16,9 +17,11 @@ textarea {
     color:white;
     padding-top:15px;
 }
+
 #submit {
     margin-bottom:10px;
 }
+
 #checklist {
     background-color: white;
 }
