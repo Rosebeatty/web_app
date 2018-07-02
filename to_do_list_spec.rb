@@ -43,12 +43,12 @@ RSpec.describe do
          expect(list).to eql(['apple'])
     end
     
-   # it 'should return an item in list' do
+    it 'should return an item in list' do
         to_do_list = ToDoList.new
         to_do_list.add_task(Item.new('apple'))
         description = description
         to_do_list.print_list
-        expect(to_do_list.print_list).to eql('apple')
+        expect(to_do_list.print_list).to eq('apple')
     end
     
     it 'should return true' do
@@ -62,8 +62,4 @@ RSpec.describe do
         list = to_do_list.remove_task('pear')
         expect(list).to equal(nil)
     end
-    
-   
-    
-end
-         
+end   

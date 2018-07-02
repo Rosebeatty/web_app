@@ -1,3 +1,8 @@
+require 'sinatra'
+class MySinatraApp < Sinatra::Base
+  get '/' do
+
+      
 class Item
     
     attr_reader :description
@@ -10,6 +15,7 @@ class Item
     def complete_task
         @completed = true
     end
+    
     def description
     end
 end
@@ -40,14 +46,14 @@ class Engine
       @to_do_list = to_do_list
     end
     
-    def add_one
+    def user_response
         user_prompts
-            response = gets.chomp
-            while response == "yes"
-            user_prompts
-            response = gets.chomp    
-            end 
-            @to_do_list.print_list()  
+        response = gets.chomp
+        while response == "yes"
+        user_prompts
+        response = gets.chomp    
+        end 
+        @to_do_list.print_list()  
     end
     
     def user_prompts
@@ -62,10 +68,11 @@ end
         
     to_do_list = ToDoList.new
     engine = Engine.new(to_do_list)
-    engine.plus_one
+    engine.add_one
     
   
-
+  end
+end
 
 
    
