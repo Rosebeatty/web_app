@@ -1,6 +1,3 @@
-require 'sinatra'
-class MySinatraApp < Sinatra::Base
-  get '/' do
 
       
 class Item
@@ -70,9 +67,7 @@ end
     engine = Engine.new(to_do_list)
     engine.add_one
     
-  
-  end
-end
+
 
 
    
