@@ -40,15 +40,17 @@ textarea {
     
 </head>    
 <body>
-    <form id="add" method="post" action="/submit/">
+    <form id="add">
         <h1 id="title">Your To Do List</h1>
         <textarea id="subject" name="listItem" placeholder="Add an item to the list.." style="height:50px; width:300px;"></textarea>
         <br/>
-        <input value="submit" type="submit"/>
+        <button id="submit">Submit</button>
    <br/>
+    <form id="checklist">
+        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
     </form>
     
-    <div id="list" name="list" style="width:200px; height:200px;"></div>
+    </form>
     
 </body>
 </html>
